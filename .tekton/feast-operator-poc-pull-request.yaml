@@ -12,10 +12,10 @@ metadata:
       == "stable"
   creationTimestamp: null
   labels:
-    appstudio.openshift.io/application: opendatahub-builds
-    appstudio.openshift.io/component: odh-feast-operator
+    appstudio.openshift.io/application: poc
+    appstudio.openshift.io/component: feast-operator-poc
     pipelines.appstudio.openshift.io/type: build
-  name: odh-feast-operator-on-pull-request
+  name: feast-operator-poc-on-pull-request
   namespace: open-data-hub-tenant
 spec:
   params:
@@ -24,7 +24,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/opendatahub/feast-operator:odh-pr
+    value: quay.io/redhat-user-workloads/open-data-hub-tenant/feast-operator-poc:odh-pr
   - name: dockerfile
     value: Dockerfile
   - name: path-context
@@ -44,7 +44,7 @@ spec:
     - name: pathInRepo
       value: pipeline/multi-arch-container-build.yaml
   taskRunTemplate:
-    serviceAccountName: build-pipeline-odh-feast-operator
+    serviceAccountName: build-pipeline-feast-operator-poc
   workspaces:
   - name: git-auth
     secret:
