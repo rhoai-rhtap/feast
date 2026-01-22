@@ -27,3 +27,7 @@ spec:
       value: konflux-poc
     - name: pathInRepo
       value: integration-tests/template/pr-group-testing-pipeline.yaml
+  workspaces:
+  - name: git-auth
+    secret:
+      secretName: '{{ git_auth_secret }}'
