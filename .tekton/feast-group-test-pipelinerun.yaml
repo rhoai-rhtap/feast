@@ -18,6 +18,9 @@ metadata:
     appstudio.openshift.io/component: feast-group-poc
     pipelines.appstudio.openshift.io/type: build
 spec:
+  params:
+  - name: group-components
+    value: '{ "feast-operator-poc": "redhat-user-workloads/open-data-hub-tenant/feast-operator-poc", "feature-server-poc": "redhat-user-workloads/open-data-hub-tenant/feature-server-poc" }'
   pipelineRef:
     resolver: git
     params:
