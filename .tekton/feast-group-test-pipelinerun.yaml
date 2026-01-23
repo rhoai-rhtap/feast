@@ -30,6 +30,16 @@ spec:
       value: konflux-poc
     - name: pathInRepo
       value: integration-tests/template/pr-group-testing-pipeline.yaml
+  taskRunTemplate:
+    podTemplate:
+      nodeSelector:
+        konflux-ci.dev/workload: konflux-tenants
+      tolerations:
+      - effect: NoSchedule
+        key: konflux-ci.dev/workload
+        operator: Equal
+        value: konflux-tenants
+    serviceAccountName: konflux-integration-runner
   workspaces:
   - name: git-auth
     secret:
