@@ -16,7 +16,7 @@ metadata:
   labels:
     appstudio.openshift.io/application: poc
     appstudio.openshift.io/component: feast-group-poc
-    pipelines.appstudio.openshift.io/type: build
+    pipelines.appstudio.openshift.io/type: test
 spec:
   params:
   - name: group-components
