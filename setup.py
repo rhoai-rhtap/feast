@@ -163,7 +163,7 @@ QDRANT_REQUIRED = ["qdrant-client>=1.12.0"]
 
 GO_REQUIRED = ["cffi>=1.15.0"]
 
-MILVUS_REQUIRED = ["pymilvus>2.5", "milvus-lite==2.4.12", "setuptools>=60,<81"]
+MILVUS_REQUIRED = ["pymilvus>2.5", "milvus-lite==2.5.1", "setuptools>=60,<81"]
 
 TORCH_REQUIRED = [
     "torch>=2.7.0",
