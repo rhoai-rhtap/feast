@@ -153,7 +153,7 @@ SINGLESTORE_REQUIRED = ["singlestoredb<1.8.0"]
 
 COUCHBASE_REQUIRED = [
     "couchbase==4.3.2",
-    "couchbase-columnar==1.0.0"
+    "couchbase-columnar==1.0.1"
 ]
 
 MSSQL_REQUIRED = ["ibis-framework[mssql]>=10.0.0"]
