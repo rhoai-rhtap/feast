@@ -29,7 +29,7 @@ spec:
     - name: revision
       value: konflux-poc
     - name: pathInRepo
-      value: integration-tests/template/pr-group-testing-pipeline.yaml
+      value: integration-tests/feast/pr-group-testing-pipeline.yaml
   taskRunTemplate:
     podTemplate:
       nodeSelector:
