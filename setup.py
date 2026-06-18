@@ -137,7 +137,7 @@ IBIS_REQUIRED = [
 
 GRPCIO_REQUIRED = [
     "grpcio>=1.56.2,<=1.62.3",
-    "grpcio-reflection>=1.56.2,<=1.62.3",
+    "grpcio-reflection>=1.81.1,<=1.81.1",
     "grpcio-health-checking>=1.56.2,<=1.62.3",
 ]
 
