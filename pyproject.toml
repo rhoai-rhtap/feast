@@ -108,10 +108,10 @@ mysql = ["pymysql", "types-PyMySQL"]
 opentelemetry = ["prometheus_client", "psutil"]
 spark = ["pyspark>=4.0.0"]
 trino = ["trino>=0.305.0,<0.400.0", "regex"]
-postgres = ["psycopg[binary,pool]==3.2.5"]
+postgres = ["psycopg[binary,pool]==3.3.4"]
 # psycopg[c] install requires a system with a C compiler, python dev headers, & postgresql client dev headers
 # https://www.psycopg.org/psycopg3/docs/basic/install.html#local-installation
-postgres-c = ["psycopg[c,pool]==3.2.5"]
+postgres-c = ["psycopg[c,pool]==3.3.4"]
 pytorch = ["torch>=2.7.0", "torchvision>=0.22.1"]
 qdrant = ["qdrant-client>=1.12.0"]
 rag = [
