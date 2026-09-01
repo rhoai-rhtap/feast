@@ -126,12 +126,12 @@
     <dependency>
       <groupId>com.azure</groupId>
       <artifactId>azure-storage-blob</artifactId>
-      <version>12.26.1</version>
+      <version>12.35.1</version>
     </dependency>
     <dependency>
       <groupId>com.azure</groupId>
       <artifactId>azure-identity</artifactId>
-      <version>1.12.2</version>
+      <version>1.18.5</version>
     </dependency>
 
     <!-- TODO: SLF4J is being used via Lombok, but also jog4j - pick one -->
