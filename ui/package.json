@@ -139,7 +139,7 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "resolutions": {
-    "nwsapi": "2.2.13"
+    "nwsapi": "2.2.27"
   },
   "description": "Web UI for the [Feast Feature Store](https://feast.dev/)",
   "repository": {
